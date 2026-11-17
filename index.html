@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitetura Computacional Cruzadinha</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
         <h1>Arquitetura Computacional Cruzadinha</h1>
         <p>Preencha a cruzadinha com todos os termos da disciplina e teste seus conhecimentos!</p>
+        <!-- Placar visível logo abaixo do cabeçalho -->
+        <div id="score-display" class="score-header">0 de 16 palavras corretas.</div>
     </header>
 
     <main class="game-container">
@@ -20,29 +24,25 @@
                 <button id="btn-check" class="btn">Conferir Respostas</button>
                 <button id="btn-reset" class="btn secondary">Reiniciar Jogo</button>
             </div>
-            <div id="score-display" class="score"></div>
         </section>
 
         <!-- Dicas à direita (Numeradas, sem respostas antecipadas) -->
         <section class="clues-section">
             <h2>Pistas</h2>
-            
+
             <div class="clue-group">
                 <h3>Horizontais</h3>
-                <ul id="horizontal-clues">
-                    <!-- Geradas dinamicamente via script para exibir a resposta apenas ao completar/conferir -->
-                </ul>
+                <ul id="horizontal-clues"></ul>
             </div>
 
             <div class="clue-group">
                 <h3>Verticais</h3>
-                <ul id="vertical-clues">
-                    <!-- Geradas dinamicamente via script -->
-                </ul>
+                <ul id="vertical-clues"></ul>
             </div>
         </section>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
