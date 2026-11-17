@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura Computacional Cruzadinha</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Arquitetura Computacional Cruzadinha</h1>
+        <p>Teste seus conhecimentos sobre os conceitos da disciplina preenchendo a cruzadinha!</p>
+    </header>
+
+    <main class="game-container">
+        <!-- Tabuleiro da Cruzadinha (Grid 12x12 simplificado para demonstração) -->
+        <section class="board-section">
+            <div id="crossword-board" class="board">
+                <!-- Gerado dinamicamente via script.js ou estruturado em HTML -->
+            </div>
+            <div class="controls">
+                <button id="btn-check" class="btn">Conferir Respostas</button>
+                <button id="btn-reset" class="btn secondary">Reiniciar Jogo</button>
+            </div>
+            <div id="score-display" class="score"></div>
+        </section>
+
+        <!-- Dicas à direita -->
+        <section class="clues-section">
+            <h2>Pistas</h2>
+
+            <div class="clue-group">
+                <h3>Horizontais</h3>
+                <ul>
+                    <li><b>1.</b> Parte da CPU que faz as contas e as operações lógicas. (3 letras) - <i>ULA</i></li>
+                    <li><b>3.</b> Memória volátil principal de acesso aleatório do computador. (3 letras) - <i>RAM</i>
+                    </li>
+                    <li><b>5.</b> Memória não volátil que armazena a BIOS/firmware de inicialização. (3 letras) -
+                        <i>ROM</i></li>
+                    <li><b>7.</b> Memória ultrarrápida localizada diretamente no interior da CPU. (5 letras) -
+                        <i>CACHE</i></li>
+                    <li><b>9.</b> Barramento responsável por transportar o fluxo de informações e dados. (8 letras) -
+                        <i>DATABUS</i></li>
+                    <li><b>11.</b> Processador que possui dois núcleos de processamento físicos. (8 letras) -
+                        <i>DUALCORE</i></li>
+                </ul>
+            </div>
+
+            <div class="clue-group">
+                <h3>Verticais</h3>
+                <ul>
+                    <li><b>2.</b> Cérebro do computador responsável por coordenar e executar instruções. (3 letras) -
+                        <i>CPU</i></li>
+                    <li><b>4.</b> Pequenos espaços de armazenamento interno ultrarrápidos da CPU. (13 letras) -
+                        <i>REGISTRADORES</i></li>
+                    <li><b>6.</b> Memória flash eletricamente apagável e programável. (7 letras) - <i>EEPROM</i></li>
+                    <li><b>8.</b> Tecnologia de armazenamento flash rápida e de estado sólido. (5 letras) - <i>FLASH</i>
+                    </li>
+                    <li><b>10.</b> Permite que periféricos transfiram dados diretamente para a RAM sem passar pela CPU.
+                        (3 letras) - <i>DMA</i></li>
+                    <li><b>12.</b> Barramento que define o local da memória que será acessado. (10 letras) -
+                        <i>ADDRESSBUS</i></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
