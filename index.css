@@ -55,8 +55,8 @@ header p {
 
 .board {
     display: grid;
-    grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
+    grid-template-columns: repeat(19, 30px);
+    grid-template-rows: repeat(19, 30px);
     gap: 2px;
     background-color: #232323;
     padding: 4px;
@@ -104,15 +104,14 @@ header p {
     pointer-events: none;
 }
 
-/* Validação individual por quadrado */
 .cell.correct {
     background-color: #d4edda !important;
-    color: #00ff04;
+    color: #155724;
     border-color: #c3e6cb;
 }
 
 .cell.incorrect {
-    background-color: #de2736 !important;
+    background-color: #f8d7da !important;
     color: #721c24;
     border-color: #f5c6cb;
 }
